@@ -9,8 +9,112 @@
     <!-- style vanila css -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Tailwind Css linked -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- font awesome kit code -->
+    <script src="https://kit.fontawesome.com/c35c7da5ef.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
+    <!-- header introduction section -->
+
+    <header class="flex bg-fixed ">
+        <section class="container absolute flex flex-col justify-center items-center ">
+
+            <!-- portfolio top image -->
+            <div class="w-72 h-72 mt-12">
+                <img src="images/glass2.png" alt="" class=" rounded-full shadow-2xl ring-4">
+            </div>
+
+            <!-- Top animated Text area -->
+            <div class="my-12">
+                <h1 class="text-3xl font-bold text-gray-900">Hi There !</h1>
+                <p class="text-2xl font-semibold text-gray-900">I am <span  class="font-bold name">Aehtesham </span></p>
+            </div>
+            
+
+            <button class="animate-pulse bg-indigo-800 mb-8 font-semibold text-sm text-gray-100 p-2 rounded ring shadow-2xl" id="about-me-btn">More About Me -></button>
     
+            
+        </section>
+        <section class="relative sm:top-12  left-4 h-96   sm:left-12">
+            
+            <ul>
+               
+               <div id="blog" class="self-intro-animated">
+                <button class="bg-pink-300 ring  text-2xl px-2 text-pink-800 " id="cross-btn">X</button>
+                <div class="h-12 w-12 relative left-16 rounded-full shadow-xl flex  items-center justify-center bg-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 text-pink-800 flex w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                        
+                      </svg>
+                      
+                </div>
+               
+               
+                <li class="bg-pink-800  my-2 text-center text-sm  p-1 sm:p-2 text-gray-200 font-bold rounded-full "> Blog Writer</li>
+               </div>
+
+               <div id="web" class="self-intro-animated">
+                <div class="h-12 w-12 relative left-16 rounded-full shadow-xl flex  items-center justify-center bg-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-800 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                      
+                </div>
+                <li class="bg-pink-800 text-center my-2 p-2 text-gray-200 font-bold text-sm rounded-full">Junior Web Developer</li>
+               </div>
+
+               <div id="photographer" class="self-intro-animated">
+                <div class="h-12 w-12 relative left-16 rounded-full shadow-xl   flex items-center justify-center bg-gray-200 " >
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-800 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                </div>
+                <li class="bg-pink-800 my-2 p-2 text-gray-200 font-bold rounded-full text-sm text-center ">Photographer</li>
+               </div>
+            </ul>
+        </section>
+
+        
+       
+    </header>
+
+    <main>
+
+        <!-- Self introduction section -->
+        <section class="container my-16 mx-auto">
+            <div class="flex justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-pink-900  " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                    <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                  </svg>
+            </div>
+
+            <h1 class="text-3xl font-bold text-center text-gray-900">Self Introduction</h1>
+
+            <div class="sm:grid grid-cols-2 gap-12">
+                <div class="bg-indigo-800 text-gray-200  font-semibold p-12">
+                    <p class="mb-4">I am Aehtesham Mallick Reshad.Currently, I am studying Mechanical Engineering at RUET.I was born in Khulna and grown up in Khulna.</p>
+                    <p class="mb-4">I love to describe myself as an enthusiastic learner.Though I am a student of Mechanical Engineering, I have a lot of fascination towards programming language and web development.</p>
+                    <p class="mb-4">I love to explore new places and gather new experiences.Whenever I get time, I try to read books beacause reading books enrich our knowledge and builds personality.One of my favourite books is The Elephant in the brain.</p>
+
+                    <p class="mb-4">Now,I am learning everything that needs to become a junior web developer and seeking an oppurtunity to work with a company to gain experience and increase my knowledge.</p>
+
+                    <p >Thank You!</p>
+                </div>
+
+                
+            
+            </div>
+        </section>
+    </main>
+    hey
+
+
+    <script src="script.js"></script>
 </body>
 </html>
