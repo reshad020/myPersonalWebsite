@@ -50,6 +50,19 @@ span::before{
 }
 .self-intro-animated{
     display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+#full-animated-section{
+    display:none;
+}
+@keyframes opacity{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:100;
+    }
 }
 
 .skill-div-1{
