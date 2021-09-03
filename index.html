@@ -12,8 +12,8 @@
     <!-- Tailwind Css linked -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
-    <!-- font awesome kit code -->
-    <script src="https://kit.fontawesome.com/c35c7da5ef.js" crossorigin="anonymous"></script>
+    <!-- Aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -38,6 +38,8 @@
     
             
         </section>
+
+        <!--------- animated More about me section -------------->
         <section class="relative sm:top-12  left-4 h-96   sm:left-12">
             
             <ul>
@@ -85,7 +87,7 @@
     <main>
 
         <!-- Self introduction section -->
-        <section class="container my-16 mx-auto">
+        <section class="container my-16 mx-auto" id="self">
             <div class="flex justify-center items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-pink-900  " fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -96,25 +98,62 @@
 
             <h1 class="text-3xl font-bold text-center text-gray-900">Self Introduction</h1>
 
-            <div class="sm:grid grid-cols-2 gap-12">
-                <div class="bg-indigo-800 text-gray-200  font-semibold p-12">
+            <div class="sm:grid grid-cols-2 gap-20 my-12">
+                <div class="bg-indigo-800 text-gray-200 rounded ring  font-semibold p-12" data-aos="fade-up">
                     <p class="mb-4">I am Aehtesham Mallick Reshad.Currently, I am studying Mechanical Engineering at RUET.I was born in Khulna and grown up in Khulna.</p>
                     <p class="mb-4">I love to describe myself as an enthusiastic learner.Though I am a student of Mechanical Engineering, I have a lot of fascination towards programming language and web development.</p>
-                    <p class="mb-4">I love to explore new places and gather new experiences.Whenever I get time, I try to read books beacause reading books enrich our knowledge and builds personality.One of my favourite books is The Elephant in the brain.</p>
+                    
 
                     <p class="mb-4">Now,I am learning everything that needs to become a junior web developer and seeking an oppurtunity to work with a company to gain experience and increase my knowledge.</p>
 
                     <p >Thank You!</p>
                 </div>
 
+                <div class="grid grid-cols-2  md:grid-cols-3 mt-8 place-items-center">
+                    
+                    <div class="h-32 w-32  flex justify-center items-center border-8 my-2  border-yellow-500 rounded-full font-semibold "
+                    data-aos="fade-up" data-aos-delay="50">
+                        Html
+                    </div>
+                    <div class="h-32 w-32 my-2 flex justify-center items-center border-8  border-green-500 rounded-full font-semibold"
+                    data-aos="zoom-in" data-aos-delay="50">
+                        Css
+                    </div>
+                    <div class="h-32 w-32 my-2 flex justify-center items-center border-8  border-gray-500 rounded-full font-semibold"
+                    data-aos="fade-up-left" data-aos-delay="50">
+                        Javascript
+                    </div>
+                    <div class="h-32 w-32 my-2 flex justify-center items-center border-8  border-blue-500 rounded-full font-semibold"
+                    data-aos="fade-up-left" data-aos-delay="50">
+                        React
+                    </div>
+                    <div class="h-32 w-32 my-2 flex justify-center items-center border-8  border-indigo-500 rounded-full font-semibold"
+                    data-aos="zoom-in" data-aos-delay="50">
+                        Python
+                    </div>
+                    <div class="h-32 w-32 my-2 flex justify-center items-center border-8  border-pink-500 rounded-full font-semibold"
+                    data-aos="fade" data-aos-delay="50">
+                        C++
+                    </div>
+                </div>
                 
             
             </div>
         </section>
     </main>
     hey
+    
 
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                offset:140,
+                duration:800
+            }
+        );
+      </script>
 </body>
 </html>
